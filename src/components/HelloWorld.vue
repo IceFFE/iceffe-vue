@@ -1,12 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <Communication />
+    <!-- <Communication /> -->
+    <Slots />
   </div>
 </template>
 
 <script>
-import Communication from "./communication/index.vue";
+// import Communication from "./communication/index.vue";
+import Slots from "./slots/index.vue";
 
 export default {
   name: "HelloWorld",
@@ -14,7 +16,8 @@ export default {
     msg: String
   },
   components: {
-    Communication
+    // Communication,
+    Slots
   }
 };
 </script>
